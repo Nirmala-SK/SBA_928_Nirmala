@@ -1,0 +1,88 @@
+{
+  "dataset_audit": {
+    "shares": {
+      "region": {
+        "Asia-Pacific": 0.175,
+        "Europe": 0.281,
+        "Latin America": 0.115,
+        "Middle East & Africa": 0.062,
+        "North America": 0.367
+      },
+      "category": {
+        "apparel": 0.188,
+        "beauty": 0.077,
+        "drinkware": 0.156,
+        "electronics": 0.173,
+        "fitness": 0.071,
+        "food": 0.154,
+        "home": 0.181
+      }
+    },
+    "avg_review_length_by_region": {
+      "Asia-Pacific": 12.76,
+      "Europe": 14.23,
+      "Latin America": 14.16,
+      "Middle East & Africa": 13.47,
+      "North America": 13.07
+    },
+    "avg_rating_by_region": {
+      "Asia-Pacific": 2.96,
+      "Europe": 3.03,
+      "Latin America": 2.95,
+      "Middle East & Africa": 3.43,
+      "North America": 2.9
+    },
+    "loaded_terms_found": [],
+    "smallest_region": "Middle East & Africa",
+    "smallest_region_share": 0.062
+  },
+  "largest_fine_tuned_gaps": [
+    {
+      "model": "fine_tuned",
+      "group_field": "category",
+      "group": "electronics",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.9611,
+      "gap_vs_overall": -0.0324,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "region",
+      "group": "Middle East & Africa",
+      "n": 11,
+      "metric": "token_f1",
+      "mean": 0.9646,
+      "gap_vs_overall": -0.0289,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "rating",
+      "group": "mid (3)",
+      "n": 21,
+      "metric": "token_f1",
+      "mean": 0.9815,
+      "gap_vs_overall": -0.012,
+      "small_sample": false
+    }
+  ],
+  "small_sample_groups": [
+    "base/category/apparel (n=8)",
+    "base/category/beauty (n=6)",
+    "base/category/drinkware (n=6)",
+    "base/category/fitness (n=3)",
+    "base/region/Latin America (n=6)",
+    "fine_tuned/category/apparel (n=8)",
+    "fine_tuned/category/beauty (n=6)",
+    "fine_tuned/category/drinkware (n=6)",
+    "fine_tuned/category/fitness (n=3)",
+    "fine_tuned/region/Latin America (n=6)"
+  ],
+  "limitations": [
+    "Groups are synthetic labels, not real demographic evidence.",
+    "Small groups produce unstable means; do not over-read their gaps.",
+    "A metric gap is an observation, not proof of unfairness or its cause."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "records": 60,
+  "base_model": "google/flan-t5-small",
+  "fine_tuned_model": "artifacts/models/flan-t5-sba-928-run2/final",
+  "decoding": {
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 96
+  },
+  "base": {
+    "token_f1": 0.1762,
+    "positive_f1": 0.0,
+    "problem_f1": 0.0,
+    "recommendation_f1": 0.0,
+    "format_adherence": 0.0,
+    "grounding": 0.0,
+    "exact_match": 0.0
+  },
+  "fine_tuned": {
+    "token_f1": 0.9935,
+    "positive_f1": 1.0,
+    "problem_f1": 1.0,
+    "recommendation_f1": 0.9741,
+    "format_adherence": 1.0,
+    "grounding": 1.0,
+    "exact_match": 0.9667
+  },
+  "change": {
+    "token_f1": 0.8173,
+    "positive_f1": 1.0,
+    "problem_f1": 1.0,
+    "recommendation_f1": 0.9741,
+    "format_adherence": 1.0,
+    "grounding": 1.0,
+    "exact_match": 0.9667
+  },
+  "improved": 60,
+  "unchanged": 0,
+  "regressed": 0,
+  "caveat": "Synthetic, templated data. Gains here may not transfer to real reviews."
+}

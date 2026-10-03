@@ -1,0 +1,31 @@
+model,group_field,group,n,metric,mean,gap_vs_overall,small_sample
+base,category,apparel,8,token_f1,0.0804,-0.0958,True
+base,category,beauty,6,token_f1,0.1014,-0.0748,True
+base,category,drinkware,6,token_f1,0.215,0.0388,True
+base,category,electronics,10,token_f1,0.2556,0.0794,False
+base,category,fitness,3,token_f1,0.0476,-0.1286,True
+base,category,food,15,token_f1,0.2269,0.0507,False
+base,category,home,12,token_f1,0.1606,-0.0155,False
+base,region,Asia-Pacific,10,token_f1,0.1181,-0.058,False
+base,region,Europe,12,token_f1,0.1603,-0.0158,False
+base,region,Latin America,6,token_f1,0.1519,-0.0243,True
+base,region,Middle East & Africa,11,token_f1,0.1985,0.0223,False
+base,region,North America,21,token_f1,0.2082,0.032,False
+base,rating,high (4-5),20,token_f1,0.1359,-0.0403,False
+base,rating,low (1-2),19,token_f1,0.1636,-0.0126,False
+base,rating,mid (3),21,token_f1,0.226,0.0498,False
+fine_tuned,category,apparel,8,token_f1,1.0,0.0065,True
+fine_tuned,category,beauty,6,token_f1,1.0,0.0065,True
+fine_tuned,category,drinkware,6,token_f1,1.0,0.0065,True
+fine_tuned,category,electronics,10,token_f1,0.9611,-0.0324,False
+fine_tuned,category,fitness,3,token_f1,1.0,0.0065,True
+fine_tuned,category,food,15,token_f1,1.0,0.0065,False
+fine_tuned,category,home,12,token_f1,1.0,0.0065,False
+fine_tuned,region,Asia-Pacific,10,token_f1,1.0,0.0065,False
+fine_tuned,region,Europe,12,token_f1,1.0,0.0065,False
+fine_tuned,region,Latin America,6,token_f1,1.0,0.0065,True
+fine_tuned,region,Middle East & Africa,11,token_f1,0.9646,-0.0289,False
+fine_tuned,region,North America,21,token_f1,1.0,0.0065,False
+fine_tuned,rating,high (4-5),20,token_f1,1.0,0.0065,False
+fine_tuned,rating,low (1-2),19,token_f1,1.0,0.0065,False
+fine_tuned,rating,mid (3),21,token_f1,0.9815,-0.012,False

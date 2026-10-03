@@ -1,0 +1,52 @@
+{
+  "model": "google/flan-t5-small",
+  "records": 12,
+  "note": "Prompt engineering only. No model parameters were changed.",
+  "variants": {
+    "minimal": {
+      "token_f1": 0.1543,
+      "positive_f1": 0.0,
+      "problem_f1": 0.0,
+      "recommendation_f1": 0.0,
+      "format_adherence": 0.0,
+      "grounding": 0.0,
+      "exact_match": 0.0
+    },
+    "structured": {
+      "token_f1": 0.1626,
+      "positive_f1": 0.0,
+      "problem_f1": 0.0,
+      "recommendation_f1": 0.0,
+      "format_adherence": 0.0,
+      "grounding": 0.0,
+      "exact_match": 0.0
+    },
+    "grounded": {
+      "token_f1": 0.171,
+      "positive_f1": 0.0,
+      "problem_f1": 0.0,
+      "recommendation_f1": 0.0,
+      "format_adherence": 0.0,
+      "grounding": 0.0,
+      "exact_match": 0.0
+    },
+    "role_based": {
+      "token_f1": 0.2674,
+      "positive_f1": 0.0,
+      "problem_f1": 0.0,
+      "recommendation_f1": 0.0,
+      "format_adherence": 0.0,
+      "grounding": 0.0,
+      "exact_match": 0.0
+    },
+    "few_shot": {
+      "token_f1": 0.0346,
+      "positive_f1": 0.0,
+      "problem_f1": 0.0,
+      "recommendation_f1": 0.0,
+      "format_adherence": 0.0,
+      "grounding": 0.0,
+      "exact_match": 0.0
+    }
+  }
+}

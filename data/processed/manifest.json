@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "files": {
+    "train": {
+      "path": "data\\processed\\train.jsonl",
+      "records": 480,
+      "sha256": "b05291b8b53a059e7f00156d11a8d194144f6b5252221fbfb7250d50228db643"
+    },
+    "validation": {
+      "path": "data\\processed\\validation.jsonl",
+      "records": 60,
+      "sha256": "1f3f5bfbea093a84e69bb868c1d526231cf573c9c2e4860c7cc50399e046f463"
+    },
+    "test": {
+      "path": "data\\processed\\test.jsonl",
+      "records": 60,
+      "sha256": "6813d489078ec30635bd149a59f80928be8f31e56774618905073942154b4782"
+    }
+  }
+}
