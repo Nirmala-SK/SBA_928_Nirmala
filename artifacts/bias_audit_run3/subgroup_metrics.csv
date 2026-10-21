@@ -1,0 +1,43 @@
+model,group_field,group,n,metric,mean,gap_vs_overall,small_sample
+base,category,apparel,12,token_f1,0.0418,-0.0362,False
+base,category,beauty,8,token_f1,0.0552,-0.0228,True
+base,category,drinkware,8,token_f1,0.0849,0.0069,True
+base,category,electronics,10,token_f1,0.1208,0.0428,False
+base,category,fitness,4,token_f1,0.0767,-0.0013,True
+base,category,food,9,token_f1,0.1208,0.0428,True
+base,category,home,9,token_f1,0.0508,-0.0272,True
+base,region,Asia-Pacific,6,token_f1,0.0254,-0.0553,True
+base,region,Europe,8,token_f1,0.0914,0.0107,True
+base,region,Latin America,6,token_f1,0.1879,0.1072,True
+base,region,Middle East & Africa,4,token_f1,0.04,-0.0407,True
+base,region,North America,6,token_f1,0.0417,-0.039,True
+base,rating,high (4-5),13,token_f1,0.0445,-0.0335,False
+base,rating,low (1-2),5,token_f1,0.2378,0.1598,True
+base,rating,mid (3),42,token_f1,0.0694,-0.0086,False
+base,task_type,competitor_analysis,10,token_f1,0.1619,0.0839,False
+base,task_type,consumer_behavior,10,token_f1,0.0111,-0.0669,False
+base,task_type,customer_segmentation,10,token_f1,0.0083,-0.0697,False
+base,task_type,market_trend,10,token_f1,0.0547,-0.0233,False
+base,task_type,product_demand,10,token_f1,0.053,-0.0251,False
+base,task_type,review_insight,10,token_f1,0.179,0.101,False
+fine_tuned,category,apparel,12,token_f1,0.9159,0.0978,False
+fine_tuned,category,beauty,8,token_f1,0.7787,-0.0394,True
+fine_tuned,category,drinkware,8,token_f1,0.8378,0.0197,True
+fine_tuned,category,electronics,10,token_f1,0.7113,-0.1067,False
+fine_tuned,category,fitness,4,token_f1,0.8455,0.0274,True
+fine_tuned,category,food,9,token_f1,0.8753,0.0572,True
+fine_tuned,category,home,9,token_f1,0.7543,-0.0638,True
+fine_tuned,region,Asia-Pacific,6,token_f1,0.9506,0.1904,True
+fine_tuned,region,Europe,8,token_f1,0.7875,0.0273,True
+fine_tuned,region,Latin America,6,token_f1,0.799,0.0388,True
+fine_tuned,region,Middle East & Africa,4,token_f1,0.6898,-0.0704,True
+fine_tuned,region,North America,6,token_f1,0.5414,-0.2188,True
+fine_tuned,rating,high (4-5),13,token_f1,0.8766,0.0585,False
+fine_tuned,rating,low (1-2),5,token_f1,0.8169,-0.0012,True
+fine_tuned,rating,mid (3),42,token_f1,0.8001,-0.018,False
+fine_tuned,task_type,competitor_analysis,10,token_f1,0.8853,0.0672,False
+fine_tuned,task_type,consumer_behavior,10,token_f1,0.9254,0.1074,False
+fine_tuned,task_type,customer_segmentation,10,token_f1,0.6871,-0.131,False
+fine_tuned,task_type,market_trend,10,token_f1,0.7538,-0.0642,False
+fine_tuned,task_type,product_demand,10,token_f1,0.8171,-0.001,False
+fine_tuned,task_type,review_insight,10,token_f1,0.8396,0.0216,False
