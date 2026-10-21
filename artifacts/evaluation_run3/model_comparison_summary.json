@@ -1,0 +1,244 @@
+{
+  "records": 60,
+  "base_model": "google/flan-t5-small",
+  "fine_tuned_model": "artifacts/models/flan-t5-sba-928-run3/final",
+  "decoding": {
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 96
+  },
+  "base": {
+    "token_f1": 0.078,
+    "positive_f1": 0.0,
+    "problem_f1": 0.0,
+    "recommendation_f1": 0.0,
+    "format_adherence": 0.0,
+    "grounding": 0.0,
+    "exact_match": 0.0,
+    "key_field_match": 0.0
+  },
+  "fine_tuned": {
+    "token_f1": 0.8181,
+    "positive_f1": 0.725,
+    "problem_f1": 0.7762,
+    "recommendation_f1": 0.6442,
+    "format_adherence": 1.0,
+    "grounding": 0.5489,
+    "exact_match": 0.2667,
+    "key_field_match": 0.6833
+  },
+  "change": {
+    "token_f1": 0.7401,
+    "positive_f1": 0.725,
+    "problem_f1": 0.7762,
+    "recommendation_f1": 0.6442,
+    "format_adherence": 1.0,
+    "grounding": 0.5489,
+    "exact_match": 0.2667,
+    "key_field_match": 0.6833
+  },
+  "by_task": {
+    "competitor_analysis": {
+      "records": 10,
+      "base": {
+        "token_f1": 0.1619,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "fine_tuned": {
+        "token_f1": 0.8853,
+        "positive_f1": 0.7,
+        "problem_f1": 0.65,
+        "recommendation_f1": 0.9,
+        "format_adherence": 1.0,
+        "grounding": 0.76,
+        "exact_match": 0.1,
+        "key_field_match": 0.7
+      },
+      "change": {
+        "token_f1": 0.7234,
+        "positive_f1": 0.7,
+        "problem_f1": 0.65,
+        "recommendation_f1": 0.9,
+        "format_adherence": 1.0,
+        "grounding": 0.76,
+        "exact_match": 0.1,
+        "key_field_match": 0.7
+      }
+    },
+    "consumer_behavior": {
+      "records": 10,
+      "base": {
+        "token_f1": 0.0111,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "fine_tuned": {
+        "token_f1": 0.9254,
+        "positive_f1": 0.8,
+        "problem_f1": 1.0,
+        "recommendation_f1": 0.8742,
+        "format_adherence": 1.0,
+        "grounding": 1.0,
+        "exact_match": 0.4,
+        "key_field_match": 0.8
+      },
+      "change": {
+        "token_f1": 0.9143,
+        "positive_f1": 0.8,
+        "problem_f1": 1.0,
+        "recommendation_f1": 0.8742,
+        "format_adherence": 1.0,
+        "grounding": 1.0,
+        "exact_match": 0.4,
+        "key_field_match": 0.8
+      }
+    },
+    "customer_segmentation": {
+      "records": 10,
+      "base": {
+        "token_f1": 0.0083,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "fine_tuned": {
+        "token_f1": 0.6871,
+        "positive_f1": 0.65,
+        "problem_f1": 0.6,
+        "recommendation_f1": 0.4286,
+        "format_adherence": 1.0,
+        "grounding": 0.3333,
+        "exact_match": 0.3,
+        "key_field_match": 0.4
+      },
+      "change": {
+        "token_f1": 0.6788,
+        "positive_f1": 0.65,
+        "problem_f1": 0.6,
+        "recommendation_f1": 0.4286,
+        "format_adherence": 1.0,
+        "grounding": 0.3333,
+        "exact_match": 0.3,
+        "key_field_match": 0.4
+      }
+    },
+    "market_trend": {
+      "records": 10,
+      "base": {
+        "token_f1": 0.0547,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "fine_tuned": {
+        "token_f1": 0.7538,
+        "positive_f1": 0.6,
+        "problem_f1": 0.6667,
+        "recommendation_f1": 0.7,
+        "format_adherence": 1.0,
+        "grounding": 0.2,
+        "exact_match": 0.0,
+        "key_field_match": 0.6
+      },
+      "change": {
+        "token_f1": 0.6991,
+        "positive_f1": 0.6,
+        "problem_f1": 0.6667,
+        "recommendation_f1": 0.7,
+        "format_adherence": 1.0,
+        "grounding": 0.2,
+        "exact_match": 0.0,
+        "key_field_match": 0.6
+      }
+    },
+    "product_demand": {
+      "records": 10,
+      "base": {
+        "token_f1": 0.053,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "fine_tuned": {
+        "token_f1": 0.8171,
+        "positive_f1": 0.6,
+        "problem_f1": 0.7403,
+        "recommendation_f1": 0.7,
+        "format_adherence": 1.0,
+        "grounding": 0.0,
+        "exact_match": 0.6,
+        "key_field_match": 0.6
+      },
+      "change": {
+        "token_f1": 0.7641,
+        "positive_f1": 0.6,
+        "problem_f1": 0.7403,
+        "recommendation_f1": 0.7,
+        "format_adherence": 1.0,
+        "grounding": 0.0,
+        "exact_match": 0.6,
+        "key_field_match": 0.6
+      }
+    },
+    "review_insight": {
+      "records": 10,
+      "base": {
+        "token_f1": 0.179,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "fine_tuned": {
+        "token_f1": 0.8396,
+        "positive_f1": 1.0,
+        "problem_f1": 1.0,
+        "recommendation_f1": 0.2622,
+        "format_adherence": 1.0,
+        "grounding": 1.0,
+        "exact_match": 0.2,
+        "key_field_match": 1.0
+      },
+      "change": {
+        "token_f1": 0.6606,
+        "positive_f1": 1.0,
+        "problem_f1": 1.0,
+        "recommendation_f1": 0.2622,
+        "format_adherence": 1.0,
+        "grounding": 1.0,
+        "exact_match": 0.2,
+        "key_field_match": 1.0
+      }
+    }
+  },
+  "improved": 60,
+  "unchanged": 0,
+  "regressed": 0,
+  "caveat": "Synthetic, templated data. Gains here may not transfer to real reviews."
+}

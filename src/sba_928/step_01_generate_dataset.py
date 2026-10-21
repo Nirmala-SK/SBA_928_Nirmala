@@ -196,15 +196,23 @@ def write_raw_csv(path: Path, records: list[dict[str, Any]]) -> None:
 
 def main() -> None:
     """Generate data, split it, and write files plus a hash manifest."""
+    from sba_928.tasks import build_dataset, split_by_task
+
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--count", type=int, default=600)
     parser.add_argument("--seed", type=int, default=SEED)
     args = parser.parse_args()
 
-    records = generate_records(args.count, args.seed)
-    write_raw_csv(RAW_CSV, records)
-    parts = split_records(records, args.seed)
+    pool = generate_records(args.count, args.seed)
+    write_raw_csv(RAW_CSV, pool)
+    per_task = args.count // 6
+    records = build_dataset(pool, CATALOG, per_task, args.seed)
+    parts = split_by_task(records, args.seed)
+    for rows in parts.values():
+        for row in rows:
+            validate_record(row)
+
     paths = {"train": TRAIN_FILE, "validation": VALIDATION_FILE, "test": TEST_FILE}
     manifest: dict[str, Any] = {"seed": args.seed, "files": {}}
     for name, path in paths.items():

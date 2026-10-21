@@ -4,49 +4,366 @@
   "note": "Prompt engineering only. No model parameters were changed.",
   "variants": {
     "minimal": {
-      "token_f1": 0.1543,
+      "token_f1": 0.0856,
       "positive_f1": 0.0,
       "problem_f1": 0.0,
       "recommendation_f1": 0.0,
       "format_adherence": 0.0,
       "grounding": 0.0,
-      "exact_match": 0.0
+      "exact_match": 0.0,
+      "key_field_match": 0.0
     },
     "structured": {
-      "token_f1": 0.1626,
+      "token_f1": 0.0498,
       "positive_f1": 0.0,
       "problem_f1": 0.0,
       "recommendation_f1": 0.0,
       "format_adherence": 0.0,
       "grounding": 0.0,
-      "exact_match": 0.0
+      "exact_match": 0.0,
+      "key_field_match": 0.0
     },
     "grounded": {
-      "token_f1": 0.171,
+      "token_f1": 0.0837,
       "positive_f1": 0.0,
       "problem_f1": 0.0,
       "recommendation_f1": 0.0,
       "format_adherence": 0.0,
       "grounding": 0.0,
-      "exact_match": 0.0
+      "exact_match": 0.0,
+      "key_field_match": 0.0
     },
     "role_based": {
-      "token_f1": 0.2674,
+      "token_f1": 0.089,
       "positive_f1": 0.0,
       "problem_f1": 0.0,
       "recommendation_f1": 0.0,
       "format_adherence": 0.0,
       "grounding": 0.0,
-      "exact_match": 0.0
+      "exact_match": 0.0,
+      "key_field_match": 0.0
     },
     "few_shot": {
-      "token_f1": 0.0346,
+      "token_f1": 0.228,
       "positive_f1": 0.0,
-      "problem_f1": 0.0,
-      "recommendation_f1": 0.0,
-      "format_adherence": 0.0,
+      "problem_f1": 0.1111,
+      "recommendation_f1": 0.0417,
+      "format_adherence": 0.1667,
       "grounding": 0.0,
-      "exact_match": 0.0
+      "exact_match": 0.0,
+      "key_field_match": 0.0
+    }
+  },
+  "by_task": {
+    "minimal": {
+      "competitor_analysis": {
+        "token_f1": 0.2432,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "consumer_behavior": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "customer_segmentation": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "market_trend": {
+        "token_f1": 0.0571,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "product_demand": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "review_insight": {
+        "token_f1": 0.2132,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      }
+    },
+    "structured": {
+      "competitor_analysis": {
+        "token_f1": 0.16,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "consumer_behavior": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "customer_segmentation": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "market_trend": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "product_demand": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "review_insight": {
+        "token_f1": 0.1389,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      }
+    },
+    "grounded": {
+      "competitor_analysis": {
+        "token_f1": 0.2151,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "consumer_behavior": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "customer_segmentation": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "market_trend": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "product_demand": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "review_insight": {
+        "token_f1": 0.2872,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      }
+    },
+    "role_based": {
+      "competitor_analysis": {
+        "token_f1": 0.2286,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "consumer_behavior": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "customer_segmentation": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "market_trend": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "product_demand": {
+        "token_f1": 0.0,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "review_insight": {
+        "token_f1": 0.3056,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      }
+    },
+    "few_shot": {
+      "competitor_analysis": {
+        "token_f1": 0.0833,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "consumer_behavior": {
+        "token_f1": 0.2973,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "customer_segmentation": {
+        "token_f1": 0.25,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "market_trend": {
+        "token_f1": 0.52,
+        "positive_f1": 0.0,
+        "problem_f1": 0.6667,
+        "recommendation_f1": 0.25,
+        "format_adherence": 1.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "product_demand": {
+        "token_f1": 0.1181,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      },
+      "review_insight": {
+        "token_f1": 0.099,
+        "positive_f1": 0.0,
+        "problem_f1": 0.0,
+        "recommendation_f1": 0.0,
+        "format_adherence": 0.0,
+        "grounding": 0.0,
+        "exact_match": 0.0,
+        "key_field_match": 0.0
+      }
     }
   }
 }

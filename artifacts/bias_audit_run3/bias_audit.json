@@ -1,0 +1,175 @@
+{
+  "dataset_audit": {
+    "shares": {
+      "task_type": {
+        "competitor_analysis": 0.167,
+        "consumer_behavior": 0.167,
+        "customer_segmentation": 0.167,
+        "market_trend": 0.167,
+        "product_demand": 0.167,
+        "review_insight": 0.167
+      },
+      "category": {
+        "apparel": 0.185,
+        "beauty": 0.075,
+        "drinkware": 0.152,
+        "electronics": 0.158,
+        "fitness": 0.077,
+        "food": 0.171,
+        "home": 0.181
+      },
+      "region": {
+        "Asia-Pacific": 0.188,
+        "Europe": 0.242,
+        "Latin America": 0.15,
+        "Middle East & Africa": 0.121,
+        "North America": 0.3
+      }
+    },
+    "records_with_a_single_region": 240,
+    "records_pooling_regions": 240,
+    "review_insight_records_used_for_length_and_rating": 80,
+    "avg_review_length_by_region": {
+      "Asia-Pacific": 11.93,
+      "Europe": 14,
+      "Latin America": 11.86,
+      "Middle East & Africa": 13.62,
+      "North America": 13.5
+    },
+    "avg_rating_by_region": {
+      "Asia-Pacific": 2.79,
+      "Europe": 3.19,
+      "Latin America": 3.14,
+      "Middle East & Africa": 2.75,
+      "North America": 3.27
+    },
+    "loaded_terms_found": [],
+    "smallest_region": "Middle East & Africa",
+    "smallest_region_share": 0.121
+  },
+  "largest_fine_tuned_gaps": [
+    {
+      "model": "fine_tuned",
+      "group_field": "category",
+      "group": "electronics",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.7113,
+      "gap_vs_overall": -0.1067,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "category",
+      "group": "apparel",
+      "n": 12,
+      "metric": "token_f1",
+      "mean": 0.9159,
+      "gap_vs_overall": 0.0978,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "rating",
+      "group": "high (4-5)",
+      "n": 13,
+      "metric": "token_f1",
+      "mean": 0.8766,
+      "gap_vs_overall": 0.0585,
+      "small_sample": false
+    }
+  ],
+  "fine_tuned_by_task_type": [
+    {
+      "model": "fine_tuned",
+      "group_field": "task_type",
+      "group": "competitor_analysis",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.8853,
+      "gap_vs_overall": 0.0672,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "task_type",
+      "group": "consumer_behavior",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.9254,
+      "gap_vs_overall": 0.1074,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "task_type",
+      "group": "customer_segmentation",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.6871,
+      "gap_vs_overall": -0.131,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "task_type",
+      "group": "market_trend",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.7538,
+      "gap_vs_overall": -0.0642,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "task_type",
+      "group": "product_demand",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.8171,
+      "gap_vs_overall": -0.001,
+      "small_sample": false
+    },
+    {
+      "model": "fine_tuned",
+      "group_field": "task_type",
+      "group": "review_insight",
+      "n": 10,
+      "metric": "token_f1",
+      "mean": 0.8396,
+      "gap_vs_overall": 0.0216,
+      "small_sample": false
+    }
+  ],
+  "small_sample_groups": [
+    "base/category/beauty (n=8)",
+    "base/category/drinkware (n=8)",
+    "base/category/fitness (n=4)",
+    "base/category/food (n=9)",
+    "base/category/home (n=9)",
+    "base/region/Asia-Pacific (n=6)",
+    "base/region/Europe (n=8)",
+    "base/region/Latin America (n=6)",
+    "base/region/Middle East & Africa (n=4)",
+    "base/region/North America (n=6)",
+    "base/rating/low (1-2) (n=5)",
+    "fine_tuned/category/beauty (n=8)",
+    "fine_tuned/category/drinkware (n=8)",
+    "fine_tuned/category/fitness (n=4)",
+    "fine_tuned/category/food (n=9)",
+    "fine_tuned/category/home (n=9)",
+    "fine_tuned/region/Asia-Pacific (n=6)",
+    "fine_tuned/region/Europe (n=8)",
+    "fine_tuned/region/Latin America (n=6)",
+    "fine_tuned/region/Middle East & Africa (n=4)",
+    "fine_tuned/region/North America (n=6)",
+    "fine_tuned/rating/low (1-2) (n=5)"
+  ],
+  "limitations": [
+    "Groups are synthetic labels, not real demographic evidence.",
+    "Small groups produce unstable means; do not over-read their gaps.",
+    "A metric gap is an observation, not proof of unfairness or its cause.",
+    "Region is only a real attribute for 3 of 6 task families; the others pool all regions and are left out of the region comparison.",
+    "Gaps between task families reflect task difficulty, not group fairness."
+  ]
+}
